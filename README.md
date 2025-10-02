@@ -29,7 +29,8 @@ capslock/
 │   ├── fixtures.ts                # Playwright fixtures
 │   └── init-form.spec.ts          # 11 test scenarios
 ├── playwright.config.ts
-└── BUGS_FOUND.md                  # Bug report
+├── BUGS_FOUND.md                  # Bug report
+└── WRITTEN_EVALUATION.md          # Part 2 answers
 ```
 
 ## 🧪 Test Scenarios (11 Total)
@@ -62,40 +63,7 @@ Requirements specify exactly 10 digits, but form accepts 11 digits and redirects
 
 ## 📝 Written Evaluation
 
-### 1. Change Detection for Landing Pages
-
-**Approach:**
-- **Visual regression**: Playwright screenshots + Percy/Applitools
-- **DOM monitoring**: Git hooks trigger tests on component changes
-- **CI/CD**: Auto-run affected tests based on file paths
-- **API contracts**: Trigger E2E tests when backend changes
-
-### 2. Tools & Processes
-
-**Testing:**
-- Playwright (cross-browser, TypeScript, reliable)
-- Faker (realistic random data)
-- Page Object Model (maintainable, reusable)
-
-**CI/CD:**
-- GitHub Actions (native integration)
-
-**AI Integration:**
-- Copilot for test writing
-- Playwright Codegen for locators
-- ChatGPT/Claude for test planning
-
-### 3. Most Challenging Situation
-
-**Challenge:** 30% flaky E2E tests in microservices suite
-
-**Resolution:**
-1. Replaced arbitrary waits with Playwright auto-waiting
-2. Test isolation using unique data per test (Faker)
-3. Service health checks before tests
-4. Detailed logging for debugging
-
-**Result:** Flakiness reduced from 30% → <2%, execution time -40%
+📄 **See:** [WRITTEN_EVALUATION.md](WRITTEN_EVALUATION.md) — My answers to the three evaluation questions about change detection automation, project ownership, and the most challenging test automation situation I've faced.
 
 ## 🎯 Key Features
 
