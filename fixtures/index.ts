@@ -1,5 +1,5 @@
 import { test as base } from '@playwright/test';
-import { InitFormPage } from '../../page-objects/init-form.page';
+import { InitFormPage } from '../page-objects/init-form.page';
 
 /**
  * Test Data - Valid and Invalid Test Cases

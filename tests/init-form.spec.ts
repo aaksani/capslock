@@ -1,5 +1,5 @@
-import { test, expect, testData } from './fixtures';
-import { testDataGenerator } from './helpers/test-data-generator';
+import { test, expect, testData } from '../fixtures';
+import { testDataGenerator } from '../helpers/test-data-generator';
 
 test.describe('Walk-In Bath Form Tests', () => {
 
