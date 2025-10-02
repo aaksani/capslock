@@ -24,9 +24,10 @@ capslock/
 ├── page-objects/
 │   └── init-form.page.ts          # Page Object Model
 ├── tests/
+│   ├── fixtures/
+│   │   └── index.ts               # Playwright fixtures
 │   ├── helpers/
 │   │   └── test-data-generator.ts # Faker-based test data
-│   ├── fixtures.ts                # Playwright fixtures
 │   └── init-form.spec.ts          # 11 test scenarios
 ├── playwright.config.ts
 ├── BUGS_FOUND.md                  # Bug report
