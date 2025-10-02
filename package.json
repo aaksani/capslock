@@ -1,0 +1,32 @@
+{
+  "name": "capslock-qa-test-automation",
+  "version": "1.0.0",
+  "description": "Automated test suite for Capslock form validation using Playwright and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright show-report",
+    "test:form": "npx playwright test tests/form-validation.spec.ts",
+    "test:email": "npx playwright test tests/email-validation.spec.ts",
+    "test:phone": "npx playwright test tests/phone-validation.spec.ts",
+    "test:zip": "npx playwright test tests/zip-code-validation.spec.ts"
+  },
+  "keywords": [
+    "playwright",
+    "typescript",
+    "test-automation",
+    "e2e-testing",
+    "qa"
+  ],
+  "author": "QA Engineer Candidate",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.6.1",
+    "typescript": "^5.9.3"
+  }
+}
